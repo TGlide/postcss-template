@@ -1,31 +1,3 @@
-/* Link */
-.link {
-  border: 1px solid transparent;
-  border-radius: var(--radii-xs);
-  padding: 0.0625rem 0.25rem 0.1875rem;
-
-  transition: color var(--transition-appearance),
-    border var(--transition-appearance), box-shadow var(--transition-appearance),
-    opacity var(--transition-appearance);
-
-  &:hover {
-    color: var(--color-accent);
-  }
-
-  &:active {
-    color: var(--color-accent-dark);
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
-
-  &:focus {
-    border-color: var(--color-border-darker);
-    box-shadow: var(--shadow-focus);
-  }
-}
-
 .clickable {
   cursor: pointer;
   transition: opacity var(--transition-appearance);
@@ -66,7 +38,7 @@
 }
 
 .elevated-link a[href][data-elevated]::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
